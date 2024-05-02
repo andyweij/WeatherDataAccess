@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.eland.weatherData.model.WeatherInfoEntity" table="weather_info" schema="weather">
+        <id name="id" column="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="city" column="city"/>
+        <property name="date" column="date"/>
+        <property name="sunrise" column="sunrise"/>
+        <property name="high" column="high"/>
+        <property name="low" column="low"/>
+        <property name="sunset" column="sunset"/>
+        <property name="aqi" column="aqi"/>
+        <property name="fx" column="fx"/>
+        <property name="fl" column="fl"/>
+        <property name="type" column="type"/>
+        <property name="notice" column="notice"/>
+    </class>
+</hibernate-mapping>

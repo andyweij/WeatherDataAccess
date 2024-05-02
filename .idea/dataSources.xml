@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="task@localhost" uuid="42063028-367c-4697-b067-90489698316d">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://localhost:1433;database=task</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="weather@localhost" uuid="7cc20444-5268-450f-9ba5-b0e5fa8228e9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/weather</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="CST" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

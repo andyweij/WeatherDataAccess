@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.url">jdbc:sqlserver://localhost:1433;database=task;integratedSecurity=false;encrypt=true;trustServerCertificate=true;</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="connection.username">test</property>
+    <property name="connection.password">test</property>
+    <!--    <property name="hibernate.hbm2ddl.auto">update</property>-->
+    <!--    <property name="hibernate.globally_quoted_identifiers">true</property>-->
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <!-- 最大連線數 -->
+    <property name="c3p0.max_size">5</property>
+    <!-- 最小連線數 -->
+    <property name="c3p0.min_size">1</property>
+    <!-- 取得連線超時時間(豪秒),如超過設置時間則拋出異常 -->
+    <property name="c3p0.timeout">120</property>
+    <!-- 初始化時獲取的連線數 -->
+    <property name="c3p0.initialPoolSize">1</property>
+    <!-- 最大的PreparedStatment數量 -->
+    <property name="c3p0.max_statements">10</property>
+    <!-- 設置檢查閒置連接(秒)-->
+    <property name="c3p0.idle_test_period">120</property>
+    <!-- 當連線池裡連線數使用完時,獲取新的連線數 -->
+    <property name="c3p0.acquire_increment">5</property>
+    <mapping resource="TaskLogEntity.hbm.xml"/>
+    <mapping class="com.eland.weatherData.model.TaskLogEntity"/>
+    <mapping resource="WeatherInfoEntity.hbm.xml"/>
+    <mapping class="com.eland.weatherData.model.WeatherInfoEntity"/>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

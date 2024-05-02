@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="task@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.17">
+    <root id="1">
+      <ServerVersion>15.0.2101</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="DWConfiguration">
+      <ObjectId>6</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="3" parent="1" name="DWDiagnostics">
+      <ObjectId>5</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="4" parent="1" name="DWQueue">
+      <ObjectId>7</ObjectId>
+      <Collation>Latin1_General_100_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="5" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="task">
+      <ObjectId>9</ObjectId>
+      <Current>1</Current>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+      <Fingerprint>9.45152/379E57EE-92C8-4190-963F-83320C0DB888@NUC302</Fingerprint>
+    </database>
+    <database id="9" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="testdb">
+      <ObjectId>8</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <schema id="11" parent="8" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="12" parent="8" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="13" parent="8" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="14" parent="8" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="15" parent="8" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="16" parent="8" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="17" parent="8" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="18" parent="8" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="19" parent="8" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="20" parent="8" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="21" parent="8" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2023-08-16.21:42:23.750</IntrospectionTimestamp>
+      <Current>1</Current>
+      <DescriptionsCheckSum>6663709191</DescriptionsCheckSum>
+    </schema>
+    <schema id="22" parent="8" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="23" parent="8" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="24" parent="21" name="task_log">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2023-08-16.00:29:48.770</CreatedTimestamp>
+      <ModifiedTimestamp>2023-08-16.00:29:48.967</ModifiedTimestamp>
+    </table>
+    <column id="25" parent="24" name="id">
+      <Position>1</Position>
+      <Comment>流水號</Comment>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="24" name="city">
+      <Position>2</Position>
+      <Comment>城市名稱</Comment>
+      <DataType>nvarchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="24" name="update_time">
+      <Position>3</Position>
+      <Comment>更新時間</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="24" name="status">
+      <Position>4</Position>
+      <Comment>狀態</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="24" name="machine_name">
+      <Position>5</Position>
+      <Comment>機器名稱(更新這筆資料的機器)</Comment>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="24" name="message">
+      <Position>6</Position>
+      <Comment>錯誤資訊</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="31" parent="24" name="json_txt">
+      <Position>7</Position>
+      <Comment>整個json資料</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Main-Class: com.eland.weatherData.weatherDataAccessMain
+Class-Path: log4j-api-2.20.0.jar slf4j-jdk14-1.7.9.jar log4j-core-2.20.0
+ .jar mysql-connector-java-8.0.28.jar gson-2.8.5.jar jna-5.12.1.jar rxja
+ va-3.1.5.jar httpcore5-5.2.jar rxjava-2.2.21.jar httpcore5-h2-5.2.jar s
+ lf4j-api-1.7.36.jar commons-cli-1.5.0.jar httpclient5-5.2.1.jar jna-pla
+ tform-5.12.1.jar httpclient5-win-5.2.1.jar httpcore5-testing-5.2.jar ht
+ tpcore5-reactive-5.2.jar reactive-streams-1.0.4.jar httpclient5-cache-5
+ .2.1.jar httpclient5-fluent-5.2.1.jar httpclient5-testing-5.2.1.jar mss
+ ql-jdbc-12.2.0.jre8.jar hibernate-commons-annotations-5.1.0.Final.jar j
+ avax.persistence-api-2.2.jar istack-commons-runtime-3.0.7.jar antlr-2.7
+ .7.jar javax.activation-api-1.2.0.jar byte-buddy-1.10.7.jar jaxb-runtim
+ e-2.3.1.jar jboss-logging-3.3.2.Final.jar jboss-transaction-api_1.2_spe
+ c-1.1.1.Final.jar jandex-2.1.1.Final.jar FastInfoset-1.2.15.jar jaxb-ap
+ i-2.3.1.jar classmate-1.5.1.jar javassist-3.24.0-GA.jar dom4j-2.1.1.jar
+  stax-ex-1.8.jar txw2-2.3.1.jar hibernate-core-5.4.11.Final.jar
+

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.eland.weatherData.model.TaskLogEntity" table="task_log" schema="dbo" catalog="task">
+        <id name="id" column="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="city" column="city"/>
+        <property name="updateTime" column="update_time"/>
+        <property name="status" column="status"/>
+        <property name="machineName" column="machine_name"/>
+        <property name="message" column="message"/>
+        <property name="jsonTxt" column="json_txt"/>
+    </class>
+</hibernate-mapping>

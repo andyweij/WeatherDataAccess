@@ -1,0 +1,33 @@
+<component name="ArtifactManager">
+  <artifact name="WeatherDataAccess:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WeatherDataAccess_jar</output-path>
+    <root id="root">
+      <element id="archive" name="WeatherDataAccess.jar">
+        <element id="module-output" name="WeatherDataAccess" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/lib/log4j-api-2.20.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/slf4j-jdk14-1.7.9.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/log4j-core-2.20.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.28.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../commonLib/gson-2.8.5.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/jna-5.12.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/rxjava-3.1.5.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpcore5-5.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/rxjava-2.2.21.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpcore5-h2-5.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/slf4j-api-1.7.36.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/commons-cli-1.5.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpclient5-5.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/jna-platform-5.12.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpclient5-win-5.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpcore5-testing-5.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpcore5-reactive-5.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/reactive-streams-1.0.4.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpclient5-cache-5.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpclient5-fluent-5.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../httpcomponents-client-5.2.1-bin/lib/httpclient5-testing-5.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/mssql-jdbc-12.2.0.jre8.jar" />
+      <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+    </root>
+  </artifact>
+</component>
